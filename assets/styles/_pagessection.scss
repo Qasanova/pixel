@@ -1,0 +1,56 @@
+.pages{
+    .portfolio-container{
+        padding-bottom: 20px ;
+        li{
+            a{
+                color: #969696;
+            }
+        }
+    }
+}
+.number{
+    div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .numberlist{
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            justify-content: center;
+            padding-bottom: 15px;
+            .numberlistitem{
+                a{
+                    div{   
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius:50% ;
+                        border: 2px solid #969696;
+                        color: #969696;
+                        }
+                        &:hover{
+                            div{
+                                background-color: #ff7902;
+                                border: none;
+                                color: #ffffff;
+                                transition: .3s;
+                            }
+                        }
+                        &.active{
+                            div{
+                                background-color: #ff7902;
+                                border: none;
+                                color: #ffffff;
+                                transition: .3s;
+                            }
+                        }
+                }
+            }
+        }
+    }
+}

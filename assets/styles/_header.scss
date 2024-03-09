@@ -1,0 +1,80 @@
+.header{
+    background-color: transparent;
+    z-index: 300;
+    transition: background-color 0.4s ease-in-out;
+    .navbar{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .hamburgericon{
+            display:block;
+            color:#ffffff;
+            font-size:20px;
+            display: none;
+            @media (max-width: 768px){
+                display: block;
+            }
+        }
+        .navbarlist-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            @media (max-width:768px ){
+                display: none;
+            }
+            .navbarlist-right{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                font-size: 20px;
+                .navbarlist{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-around;
+                    gap: 40px;
+                    a{
+                        font-size:bold;
+                        color: #ffffff;
+                        &:hover{
+                            color: #ff7902;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+            .sociallist-left{
+                display: flex;
+                width: 70%;
+                .sociallist{
+                    display: flex;
+                    width: 100%;
+                    gap: 10px;
+                    .sociallistitem{
+                        a{
+                            div{   
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 40px;
+                                height: 40px;
+                                border-radius:50% ;
+                                border: 2px solid #ffff;
+                                }
+                                &:hover{
+                                    div, i{
+                                        border-color: #ff7902;
+                                        color: #ff7902;
+                                        transition: .3s;
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

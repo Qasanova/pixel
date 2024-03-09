@@ -1,0 +1,114 @@
+.map{
+    width: 100%;
+    height: 100vh;
+    .map-container{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+}
+.form{
+    width: 100%;
+    height: 100vh;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 100px 20px;
+        .contact-top{
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            align-self: flex-start;
+            gap: 28.5%;
+        }
+        .contact-bottom{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            .contact-container{
+                            width: 40%;
+                            .contact-info{
+                                width:100%;
+                                margin-bottom: 20px;
+                                display: flex;
+                                gap:20px;    
+                                .icon-container{
+                                    width: 30px;
+                                    height: 30px;
+                                    border: 2px solid #969696;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    i{
+                                        color: #688bfe;
+                                    }
+                                }
+                                .contact-text{
+                                    h6{
+                                        font-size: 18px;
+                                        margin-bottom: 10px;
+                                        line-height: 1.3;
+                                        font-weight: 500;
+                                    }
+                                    p{
+                                        color: #969696;
+                                        font-size: 16px;
+                                        line-height: 2;
+                                    }
+                                }
+                            }
+                        }
+                        .form-contact{
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 60%;
+                                        gap: 20px;
+                                        form{
+                                            display: flex;
+                                            flex-direction: column;
+                                            text-align: center;
+                                            width: 100%;
+                                            gap: 20px;
+                                            input, textarea{
+                                                text-align: center;
+                                                padding: 15px;
+                                                border: none;
+                                                background-color: #f6f6f6;
+                                            }   
+                                        }
+                                        .btn{
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            align-self: start;
+                                            text-transform: italic;
+                                            width: 170px;
+                                            height: 48px;
+                                            font-size: 14px;
+                                            line-height: 48px;
+                                            font-weight: 600;
+                                            background-color: #ff7902;
+                                            gap: 10px;
+                                            transition-duration: 500ms;
+                                            &:hover{
+                                                background-color:#688bfe;
+                                                transition: .5s;
+                                            }
+                                    }}            
+        }
+    }
+}
